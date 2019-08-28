@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorReal.KalkulatorCoba">
+
+        <EditText
+            android:id="@+id/txtA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/txtB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtA"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/wrap_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtB"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"/>
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@id/wrap_button"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
